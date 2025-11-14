@@ -1,0 +1,5 @@
+.venv
+taskconstants.py
+.pyc
+__pycache__
+.env
