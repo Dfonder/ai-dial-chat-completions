@@ -1,5 +1,6 @@
 .venv
-taskconstants.py
+task\constants.py
+dial-basics.postman_collection.json
 .pyc
 __pycache__
 .env
