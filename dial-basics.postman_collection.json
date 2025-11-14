@@ -16,7 +16,7 @@
 				"header": [
 					{
 						"key": "Api-Key",
-						"value": "YOUR_API_KEY",
+						"value": "dial-wflk3m41meqs3dhk5nwdor46usb",
 						"type": "text"
 					}
 				],
@@ -47,7 +47,7 @@
 				"header": [
 					{
 						"key": "Api-Key",
-						"value": "YOUR_API_KEY",
+						"value": "dial-wflk3m41meqs3dhk5nwdor46usb",
 						"type": "text"
 					}
 				],
@@ -78,7 +78,7 @@
 				"header": [
 					{
 						"key": "Api-Key",
-						"value": "YOUR_API_KEY"
+						"value": "dial-wflk3m41meqs3dhk5nwdor46usb"
 					},
 					{
 						"key": "accept",
@@ -110,7 +110,7 @@
 					"path": [
 						"openai",
 						"deployments",
-						"gpt-4o-2024-08-06",
+						"gpt-4o-2024-11-20",
 						"chat",
 						"completions"
 					]
