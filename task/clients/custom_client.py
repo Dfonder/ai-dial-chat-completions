@@ -23,6 +23,10 @@ class CustomDialClient(BaseClient):
             "model": self.model_name,  # добавляем model
             "messages": [msg.to_dict() for msg in messages]
         }
+        # --- Печать сообщения, отправляемого к модели ---
+        print("\n--- MESSAGE TO MODEL (get_completion) ---")
+        print(json.dumps(request_data, indent=2, ensure_ascii=False))
+        print("--- END MESSAGE ---\n")
         response = requests.post(self._endpoint, headers=headers, json=request_data)
         print(f"Response: {response.text}")
         if response.status_code != 200:
@@ -45,6 +49,10 @@ class CustomDialClient(BaseClient):
             "stream": True,
             "messages": [msg.to_dict() for msg in messages]
         }
+        # --- Печать сообщения, отправляемого к модели ---
+        print("\n--- MESSAGE TO MODEL (stream_completion) ---")
+        print(json.dumps(request_data, indent=2, ensure_ascii=False))
+        print("--- END MESSAGE ---\n")
         contents = []
         async with aiohttp.ClientSession() as session:
             async with session.post(self._endpoint, headers=headers, json=request_data) as resp:
